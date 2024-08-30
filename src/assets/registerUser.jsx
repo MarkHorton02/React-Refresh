@@ -8,7 +8,7 @@ const Register = () => {
   const submitHandler = async (event) => {
     event.preventDefault();
     console.log(userid, email, password);
-    const response = await fetch("http://localhost:5001/users/register", {
+    const response = await fetch("https://backend-user-database-production-1e48.up.railway.app/users/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

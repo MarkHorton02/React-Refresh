@@ -14,7 +14,7 @@ const ListUsers = () => {
     console.log(token);
 
     let reply = "Bearer " + token;
-    const response = await fetch("http://localhost:5001/users/listUser", {
+    const response = await fetch("https://backend-user-database-production-1e48.up.railway.app/users/listUser", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
